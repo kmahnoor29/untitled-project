@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="pojo.CustomerRegistration" table="registercustomer">
+        <id  name="id" type="java.lang.Integer" ><generator class="increment"></generator></id>
+        <property column="firstname" name="firstname" type="java.lang.String" />
+        <property column="lastname" name="lastname" type="java.lang.String" />
+        <property column="email" name="email" unique="true" type="java.lang.String" />
+        <property column="password" name="password" type="string" />
+        <property column="confirmpassword" name="confirmpassword" type="string" />
+        <property column="registration" name="registration" type="java.lang.String" />
+        <property column="gender" name="gender" type="java.lang.String" />
+
+
+
+    </class>
+</hibernate-mapping>
